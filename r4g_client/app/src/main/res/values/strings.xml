@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ready4GRE</string>
+    <string name="base_url">http://172.30.249.121:8080</string>
+</resources>

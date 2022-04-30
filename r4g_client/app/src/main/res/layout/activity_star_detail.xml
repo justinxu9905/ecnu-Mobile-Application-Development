@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvQuantQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Quant Question?"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/llQuantOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+    </LinearLayout>
+
+</LinearLayout>

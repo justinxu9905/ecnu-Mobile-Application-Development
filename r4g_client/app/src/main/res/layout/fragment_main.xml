@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal" >
+
+    <RelativeLayout
+        android:id="@+id/score_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/estimatedScoreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Estimated Score"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/estimatedScoreView"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/quantScoreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_below="@id/estimatedScoreView"
+            android:text="170"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/verbalScoreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/divider"
+            android:layout_below="@id/estimatedScoreView"
+            android:text="152"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/quantView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_below="@id/quantScoreView"
+            android:text="Quant"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/verbalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/divider"
+            android:layout_below="@id/verbalScoreView"
+            android:text="Verbal"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/score_board" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_quant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Quant"
+                android:textColor="@drawable/main_title_txt_sel" />
+
+            <TextView
+                android:id="@+id/tv_verbal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Verbal"
+                android:textColor="@drawable/main_title_txt_sel" />
+
+            <TextView
+                android:id="@+id/tv_vocab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Vocab"
+                android:textColor="@drawable/main_title_txt_sel" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_indicator"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_normal" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title" />
+
+</RelativeLayout>
